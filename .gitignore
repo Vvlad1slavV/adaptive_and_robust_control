@@ -4,3 +4,6 @@ lab3/model1.slxc
 *.mat
 *.l
 lab3/slprj/sim/varcache/model1/tmwinternal/simulink_cache.xml
+lab3/model2.slx.autosave
+lab3/model2.slxc
+lab3/slprj/sim/varcache/model2/tmwinternal/simulink_cache.xml
