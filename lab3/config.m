@@ -24,5 +24,7 @@ theta_2 = (a_1 - a_m_1)/b_0;
 theta = [theta_1;
          theta_2];
 
+x_0 = [0; 0];
+
 t_p = 0.9;
 sigma = 0.15;
