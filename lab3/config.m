@@ -24,7 +24,10 @@ theta_2 = (a_1 - a_m_1)/b_0;
 theta = [theta_1;
          theta_2];
 
-x_0 = [0; 0];
+x_0 = [1; 0];
 
 t_p = 0.9;
 sigma = 0.15;
+
+Q = 0.5*eye(2);
+P = lyap(A_m', Q);
