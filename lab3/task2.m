@@ -20,9 +20,8 @@ e = sim_out.logsout.get("e").Values.Data;
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
-plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
+plot_xy_continuous_lable(time, e, "$Time, s$","$e(t)$", true)
+saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
 set_number = set_number + 1;
 %%
 config;
@@ -39,9 +38,8 @@ e = sim_out.logsout.get("e").Values.Data;
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
 set_number = set_number + 1;
 %%
 config;
@@ -58,7 +56,12 @@ e = sim_out.logsout.get("e").Values.Data;
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
 set_number = set_number + 1;
+
+close all;
+%% Save model as pdf
+modelName = 'model2';
+load_system(modelName)
+print(['-s', modelName], '-dpdf', 'out/model2')

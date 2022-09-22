@@ -51,7 +51,10 @@ hold(axes1,'off');
 
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 
-
+%% Save model as pdf
+modelName = 'model1';
+load_system(modelName)
+print(['-s', modelName], '-dpdf', 'out/model1')
 
 
 

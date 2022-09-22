@@ -19,12 +19,10 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 %%
 config;
@@ -42,12 +40,10 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 %%
 config;
@@ -65,13 +61,12 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
+
 
 %%
 config;
@@ -91,12 +86,10 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 
 %%
@@ -114,12 +107,10 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 
 %%
@@ -136,20 +127,18 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 
 %%
 config;
 subtask_number = 3;
 set_number = 1;
-
-sim_out = sim("model31.slx", 50);
+gamma = 100;
+sim_out = sim("model31.slx", 100);
 
 time = sim_out.tout;
 u = sim_out.logsout.get("u").Values.Data;
@@ -161,12 +150,15 @@ theta_hat = squeeze(sim_out.logsout.get("theta_hat").Values.Data);
 
 plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
 plot_xy_continuous_lable(time, e,"$Time, s$","$e(t)$", true)
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
-set_number = set_number + 1;
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, repmat(theta, [1 length(theta_hat)]) - theta_hat, "$Time, s$", "$\tilde{\theta}(t)$", true);
-saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'.png')
+saveas(gcf, path+'task'+string(task_number)+'_'+string(subtask_number)+'_'+string(set_number)+'theta'+'.png')
 set_number = set_number + 1;
 
+close all;
 
+%% Save model as pdf
+modelName = 'model3';
+load_system(modelName)
+print(['-s', modelName], '-dpdf', 'out/model3')
