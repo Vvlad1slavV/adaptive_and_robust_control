@@ -27,7 +27,9 @@ theta = [theta_1;
 x_0 = [1; 0];
 
 t_p = 0.9;
-sigma = 0.15;
+% sigma = 0.15;
 
 Q = 0.5*eye(2);
 P = lyap(A_m', Q);
+
+disturbance = 0;
