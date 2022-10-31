@@ -37,6 +37,7 @@ theta = [theta_1;
          theta_2];
 
 x_0 = [1; 0];
+disturbance = 0;
 
 Q = 0.5*eye(2);
 P = lyap(A_m', Q);
