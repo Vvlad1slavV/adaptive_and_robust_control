@@ -1,7 +1,8 @@
 path = "out/";
+config;
 %% Task 2
 TIME = 100;
-sigma = 100;
+sigma = 1;
 gamma = 100;
 
 sim_out = sim("model2.slx", TIME);
@@ -16,7 +17,7 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 1;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
@@ -38,7 +39,7 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 2;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
@@ -48,7 +49,7 @@ close all;
 
 %%
 disturbance = 1;
-sigma = 100;
+sigma = 1;
 gamma = 100;
 
 sim_out = sim("model2.slx", TIME);
@@ -63,7 +64,7 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 3;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
@@ -85,7 +86,7 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 4;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
@@ -95,7 +96,7 @@ close all;
 
 %%
 disturbance = 0;
-sigma = 10;
+sigma = 0.001;
 gamma = 100;
 
 sim_out = sim("model2.slx", TIME);
@@ -110,17 +111,17 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 5;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
 plot_xy_continuous_lable(time, theta_tilde, "$Time, s$", "$\tilde{\theta}(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'theta_tilde'+'.png')
-close all;
+% close all;
 
 %%
 disturbance = 1;
-sigma = 10;
+sigma = 0.001;
 gamma = 100;
 
 sim_out = sim("model2.slx", TIME);
@@ -135,7 +136,7 @@ theta_tilde = theta - theta_hat;
 
 task_number = 2;
 set_number = 6;
-plotTask2(time, x, x_m, "$Time, s$", "$y(t)$")
+plotTask2(time, x, x_m, "$Time, s$", "$x(t)$")
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
