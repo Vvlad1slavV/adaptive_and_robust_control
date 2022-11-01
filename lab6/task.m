@@ -12,7 +12,7 @@ x_hat = squeeze(sim_out.logsout.get("x_hat").Values.Data)';
 y = squeeze(sim_out.logsout.get("y").Values.Data);
 y_hat = squeeze(sim_out.logsout.get("y_hat").Values.Data);
 omega = sim_out.logsout.get("omega").Values.Data;
-theta_tilde = sim_out.logsout.get("theta_tilde").Values.Data;
+theta_tilde = squeeze(sim_out.logsout.get("theta_tilde").Values.Data);
 eplsilon = y - y_hat;
 e = x - x_hat;
 % plot(time, e)
