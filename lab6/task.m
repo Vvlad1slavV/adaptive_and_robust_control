@@ -12,6 +12,7 @@ x_hat = squeeze(sim_out.logsout.get("x_hat").Values.Data)';
 y = squeeze(sim_out.logsout.get("y").Values.Data);
 y_hat = squeeze(sim_out.logsout.get("y_hat").Values.Data);
 omega = sim_out.logsout.get("omega").Values.Data;
+theta_tilde = sim_out.logsout.get("theta_tilde").Values.Data;
 eplsilon = y - y_hat;
 e = x - x_hat;
 % plot(time, e)
@@ -20,7 +21,9 @@ x_norm = sqrt((x-x_hat)'*(x-x_hat));
 
 task_number = 1;
 set_number = 1;
-plot(time, x_norm, "$Time, s$", "$x(t)$")
+plot(time, theta_tilde)
+xlabel('$Time, s$','Interpreter','latex')
+ylabel('$theta_tilde$','Interpreter','latex')
 grid on
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
 % plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
