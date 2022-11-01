@@ -17,17 +17,21 @@ eplsilon = y - y_hat;
 e = x - x_hat;
 % plot(time, e)
 
-x_norm = sqrt((x-x_hat)'*(x-x_hat));
+x_norm = norm(x - x_hat);
 
 task_number = 1;
 set_number = 1;
 plot(time, theta_tilde)
 xlabel('$Time, s$','Interpreter','latex')
-ylabel('$theta_tilde$','Interpreter','latex')
+ylabel('$theta tilde$','Interpreter','latex')
 grid on
 saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'.png')
-% plot_xy_continuous_lable(time, e, "$Time, s$", "$e(t)$", true)
-% saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'e'+'.png')
+
+plot(time, x_norm)
+xlabel('$Time, s$','Interpreter','latex')
+ylabel('$x_norm$','Interpreter','latex')
+grid on
+saveas(gcf, path+'task'+string(task_number)+'_'+string(set_number)+'theta'+'.png')
 close all;
 %%
 TIME = 15000;
