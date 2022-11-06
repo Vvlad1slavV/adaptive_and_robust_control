@@ -18,7 +18,7 @@ e = x - x_hat;
 % plot(time, e)
 
 x_norm = norm(x - x_hat);
-
+%%
 task_number = 1;
 set_number = 1;
 plot(time, theta_tilde)
@@ -48,3 +48,7 @@ omega = sim_out.logsout.get("omega").Values.Data;
 eplsilon = y - y_hat;
 e = x - x_hat;
 plot(time, e)
+
+%% Save model as pdf
+print('-smodel1', '-dpdf', 'out/model1')
+print('-smodel2', '-dpdf', 'out/model2')
