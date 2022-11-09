@@ -1,14 +1,15 @@
-% Varik 12
+%% Variant 12
 
-a0 = 5;
-a1 = -6;
-b0 = 6;
-kM1 = 12;
-kM0 = 36;
-k0 = 2;
+a_0 = 5;
+a_1 = -6;
+b_0 = 6;
+k_M_1 = 12;
+k_M_0 = 36;
+k_0 = 2;
 
-bm0_hat = 1;
-m = 1;
+object_num = b_0;
+object_denum = [1 a_1 a_0];
+K_M = [1 k_M_1 k_M_0];
 
-num = b0;
-denum = [1 a1 a0];
+Lambda = -0.1;
+gamma = 1000000;
