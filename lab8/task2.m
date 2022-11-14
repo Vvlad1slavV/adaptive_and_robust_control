@@ -1,5 +1,8 @@
 path = "out/";
 config;
+psi_hat_init_conds = [0;0;0];
+nu1 =  0;
+nu2 = 0;
 %%
 gamma = 1000000;
 g_t_value = 1;
