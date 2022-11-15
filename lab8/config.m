@@ -11,5 +11,5 @@ object_num = b_0;
 object_denum = [1 a_1 a_0];
 K_M = [1 k_M_1 k_M_0];
 
-Lambda = -0.1;
+Lambda = -2;
 
