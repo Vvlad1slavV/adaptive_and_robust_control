@@ -33,8 +33,4 @@ K = H/M;
 
 Q = 0.5*eye(2);
 P = lyap(A_m', Q);
-Nd = b_f_0
-cvx_begin sdp
-variable N(2,2)
-N*d == b_0f;
-cvx_end
+
