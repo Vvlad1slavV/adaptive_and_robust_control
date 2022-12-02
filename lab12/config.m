@@ -18,19 +18,20 @@ a_m0 = omega_0*omega_0;
 k_g1 = 1.2;
 k_g0 = 0.36;
 
-A_0g = [0          1;
-         -k_g0 -k_g1];
+A_0g = [0         1;
+        -k_g0 -k_g1];
 b_0g = [0;
         1];
 
 A_m = [     0      1;
        -a_m0 -a_m1];
 
-H = [1 0];
+H = [1 1];
 M = lyap(-A, A_m, b*H);
 K = H/M;
 
-Q = eye(2);
+Q = 0.5*eye(2);
 P = lyap(A_m', Q);
 
-gamma = 0.5;
+%%
+gamma = 1.1;
