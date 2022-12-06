@@ -1,13 +1,13 @@
 path = "out/";
 config;
 %%
+close all
+TIME = 30;
 
-TIME = 150;
-
-gamma = 100;
-sim_out = sim("model.slx", TIME);
-gamma = 100;
-sim_out_grad = sim("model_grad.slx", TIME);
+gamma = 10000000;
+sim_out = sim("model_without_loop.slx", TIME);
+gamma = 10000;
+sim_out_grad = sim("model_grad_wl.slx", TIME);
 
 time = sim_out.tout;
 y = squeeze(sim_out.logsout.get("y").Values.Data);
